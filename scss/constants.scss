@@ -1,0 +1,18 @@
+$primaryBlasck: #252525;
+$primaryWhite: #fff;
+$primaryHover: #ff6347;
+
+%flexBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin setFlexBox($space){
+    display: flex;
+    justify-content: $space;
+}
+
+@mixin setSize($width,$margin){
+    width: $width;
+    margin: $margin;
+}

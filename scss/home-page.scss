@@ -1,0 +1,45 @@
+.nav{
+    @include setFlexBox(space-between);
+    @include setSize(87%,0 auto);
+    
+        &_logo{
+            font-size: 34px;
+            color: $primaryWhite;
+        }
+    
+        &_navbar{
+            @include setFlexBox(space-around);
+            width: 50%;
+            list-style: none;
+    
+    
+            li{
+                height: 40px;
+                line-height: 40px;
+            }
+    
+            a{
+                color: $primaryWhite;
+                text-decoration: none;
+                transition: 0.3s all linear;
+    
+                &:hover{
+                    color: $primaryHover;
+                }
+            }
+        }
+    }
+    
+    .container{
+    @include setFlexBox(space-between);
+    @include setSize(87%, 100px auto);
+        width: 87px;
+        margin: 100px auto;
+    
+        .col{
+            width: 30%;
+            border-radius: 20px;
+            background-color: $primaryBlasck;
+            height: 250px;
+        }
+    }
